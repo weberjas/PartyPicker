@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[EditPartyViewController save:]:EditPartyViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[allElements objectAtIndex:[indexPath row]]">
+            </PersistentString>
+            <PersistentString
+               value = "indexPath.index">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[CoreDataMgr init]:CoreDataMgr.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSBundle.mainBundle">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ElementEditorViewController saveElement:]:ElementEditorViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "element.name">
+            </PersistentString>
+            <PersistentString
+               value = "_nameField.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PartySvcCoreData updateParty:]:PartySvcCoreData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "party.elements">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[EditPartyViewController viewDidLoad]:EditPartyViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "party.name">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[EditPartyViewController tableView:willDisplayCell:forRowAtIndexPath:]:EditPartyViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "element.name">
+            </PersistentString>
+            <PersistentString
+               value = "[party.elements count]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[PartySvcCoreData createParty:description:elements:]:PartySvcCoreData.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[managedParty.elements count]">
+            </PersistentString>
+            <PersistentString
+               value = "elements">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

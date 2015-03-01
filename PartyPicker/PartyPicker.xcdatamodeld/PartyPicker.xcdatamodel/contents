@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6254" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Element" representedClassName="Element" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="party" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Party" inverseName="elements" inverseEntity="Party" syncable="YES"/>
+    </entity>
+    <entity name="Party" representedClassName="Party" syncable="YES">
+        <attribute name="desc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="elements" toMany="YES" deletionRule="Nullify" destinationEntity="Element" inverseName="party" inverseEntity="Element" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Element" positionX="-7659" positionY="-2763" width="128" height="103"/>
+        <element name="Party" positionX="-7985" positionY="-2772" width="128" height="103"/>
+    </elements>
+</model>
