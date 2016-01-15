@@ -14,7 +14,7 @@
 @interface ElementTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *nextButton;
-@property IBOutlet UITableView *tableView;
+//@property IBOutlet UITableView *tableView;
 
 @end
 
