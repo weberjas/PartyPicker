@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		390924B51A88138A00FC593F /* ElementEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 390924B41A88138A00FC593F /* ElementEditorViewController.m */; };
-		390924B71A8933EB00FC593F /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 390924B61A8933EB00FC593F /* libsqlite3.dylib */; };
 		390924C11A94E8D000FC593F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390924C01A94E8D000FC593F /* CoreData.framework */; };
 		390924C71A952AE000FC593F /* ElementSvcCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 390924C61A952AE000FC593F /* ElementSvcCoreData.m */; };
 		39234A161A7EBA5900A756F5 /* ShowPartiesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39234A151A7EBA5900A756F5 /* ShowPartiesTableViewController.m */; };
@@ -43,7 +42,6 @@
 /* Begin PBXFileReference section */
 		390924B31A88138A00FC593F /* ElementEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementEditorViewController.h; sourceTree = "<group>"; };
 		390924B41A88138A00FC593F /* ElementEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementEditorViewController.m; sourceTree = "<group>"; };
-		390924B61A8933EB00FC593F /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		390924C01A94E8D000FC593F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		390924C51A952AE000FC593F /* ElementSvcCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ElementSvcCoreData.h; sourceTree = "<group>"; };
 		390924C61A952AE000FC593F /* ElementSvcCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ElementSvcCoreData.m; sourceTree = "<group>"; };
@@ -88,7 +86,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				390924C11A94E8D000FC593F /* CoreData.framework in Frameworks */,
-				390924B71A8933EB00FC593F /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				390924C01A94E8D000FC593F /* CoreData.framework */,
-				390924B61A8933EB00FC593F /* libsqlite3.dylib */,
 				3943E8FD1A688674004CED11 /* PartyPicker */,
 				3943E91A1A688674004CED11 /* PartyPickerTests */,
 				3943E8FC1A688674004CED11 /* Products */,
@@ -247,7 +243,7 @@
 		3943E8F31A688674004CED11 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = msse650;
 				TargetAttributes = {
 					3943E8FA1A688674004CED11 = {
@@ -379,6 +375,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -441,6 +438,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PartyPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.regis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -451,6 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PartyPicker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.regis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -469,6 +468,7 @@
 				);
 				INFOPLIST_FILE = PartyPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.regis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PartyPicker.app/PartyPicker";
 			};
@@ -484,6 +484,7 @@
 				);
 				INFOPLIST_FILE = PartyPickerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.regis.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PartyPicker.app/PartyPicker";
 			};
